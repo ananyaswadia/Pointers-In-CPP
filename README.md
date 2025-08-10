@@ -27,9 +27,91 @@ Pass Arguments by Pointer: Pass the argument with their address and make changes
 
 ## Algorithms
 ### Incrementing Data Types Using Pointers
+1. Initialization
+
+Declare and initialize variables of the following data types:
+
+int a
+
+float f
+
+double d
+
+char c
+
+bool b
+
+2. Pointer Assignment
+
+For each variable, declare a pointer of the corresponding type and assign it the memory address of that variable.
+
+int *aptr = &a;
+
+float *fptr = &f;
+
+double *dptr = &d;
+
+char *cptr = &c;
+
+bool *bptr = &b;
+
+3. Process and Display
+
+For each pointer (aptr, fptr, dptr, cptr, bptr):
+
+a. Print Initial Address: Display the current memory address stored in the pointer.
+
+b. Increment Pointer: Increment the pointer (pointer++). This advances the pointer's value by the size of the data type it points to (e.g., sizeof(int), sizeof(float), etc.).
+
+c. Print New Address: Display the new memory address now stored in the pointer to show the result of the increment.
+
+4. End
 ### Revering An Array 
+1. Start.
+
+2. Initialize an integer array with elements {10, 20, 30, 40, 50}.
+
+3. Create a pointer and point it to the last element of the array (arr + 4).
+
+4. Print "Reversed array is:". using ---For i from 4 down to 0:
+
+5. Print the value pointed to by the pointer.
+
+6. Decrement the pointer to move to the previous element.
+
+7. End.
 ### Finding Difference Of Array Elements
+1. Start.
+
+2. Initialize an integer array A with {10, 20, 30, 40, 50}.
+
+3. Create pointer ap1 pointing to the 3rd element (A[2]).
+
+4. Create pointer ap2 pointing to the 5th element (A[4]).
+
+5. Calculate diff = *ap2 - *ap1.
+
+6. Display "Difference is:" followed by diff.
+
+7. End.
 ### Reading/Printing A String
+1. Start.
+
+2. Declare a character array str of size 20.
+
+3. Prompt the user to enter a string and store it in str.
+
+4. Initialize a pointer ptr to point to str.
+
+5. Print "String is:".
+
+6. While the character pointed to by ptr is not '\0' (null terminator):
+
+7. Print the character pointed to by ptr.
+
+8. Increment ptr to move to the next character.
+
+9. End.
 ## Conclusion
 We learnt the advantages and ways of using pointers in c++
 
